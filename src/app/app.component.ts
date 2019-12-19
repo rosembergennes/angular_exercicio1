@@ -6,5 +6,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ang-crud';
+  title:string = 'ANGULA CRUD';
+
+employees = [
+
+  {'name':'Fazt', position: 'manager'}, 
+  {'name':'Juan', position: 'Desing'},
+  {'name':'Pedro', position: 'Programador'}
+
+
+]
+
+model:any={};
+
+addEmployee():void{
+  this.employees.push(this.model);
+}
+
+deleteEmployee():void{
+
+}
+
+editEmployee():void{
+
+}
+
+updateEmployee():void{
+
+}
+
+
 }
